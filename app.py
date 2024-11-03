@@ -10,10 +10,10 @@ Bootstrap(app)  # Initialize Flask-Bootstrap
 # Function to connect to AWS RDS MySQL database
 def get_db_connection():
     return mysql.connector.connect(
-        host='nmaws.c7g4csqm6jl5.us-east-1.rds.amazonaws.com',  
+        host='clonedb.czokqog6icbv.ap-southeast-2.rds.amazonaws.com',  
         user='admin',
-        password='Nmawspw1',
-        database='nmaws'
+        password='Qwertyuiop140',
+        database='clonedb'
     )
 
 # Home Route
@@ -74,8 +74,8 @@ def login():
 def dashboard():
     # Example URLs for course material from S3
     course_urls = [
-        "https://nmaws1.s3.us-east-1.amazonaws.com/DC_UNIT3.pdf",
-        "https://nmaws1.s3.us-east-1.amazonaws.com/DL_UNIT3.pdf"
+        "https://shineeebucket1.s3.ap-southeast-2.amazonaws.com/HMAC.pptx.pdf",
+        "https://shineeebucket1.s3.ap-southeast-2.amazonaws.com/NOSQL+DATA+MANAGEMENT-1.pdf"
     ]
     return render_template('dashboard.html', course_urls=course_urls)
 

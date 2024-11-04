@@ -13,7 +13,7 @@ def get_db_connection():
         host='clonedb.czokqog6icbv.ap-southeast-2.rds.amazonaws.com',  
         user='admin',
         password='Qwertyuiop140',
-        database='clonedb'
+        database='clone_db'
     )
 
 # Home Route
